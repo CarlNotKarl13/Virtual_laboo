@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<html>
+<head>
+    <title>Virtual Lab Feature 1</title>
+</head>
+<br>
+    <center><h1>Virtual Lab Feature 1</h1></center>
+    
+    <p></p>
+    <h2>First Upload  a photo</h2><br/>
+    <img src="{{ url_for('static', filename='images/6-12mm_Red_Samsung_Perso_12MP.png')}}" alt="Image 1" class="img-responsive" width="200" >
+    <br/>
+    <h2><em>Result of the fonctionnalites</em></h2>
+    
+    <p>Voici un petit paragraphe pour illustrer cette fonctionnalité en action.</p>
+    <div>
+        <img src="{{ url_for('static', filename='images/pic7.png')}}" alt="Image 1" class="img-responsive" width="200" align="left">->
+        <img src="{{ url_for('static', filename='images/pic8.png')}}" alt="Image 1" class="img-responsive" width="200" >->
+        <img src="{{ url_for('static', filename='images/pic9.png')}}" alt="Image 1" class="img-responsive" width="200" >->
+        <img src="{{ url_for('static', filename='images/pic10.png')}}" alt="Image 1" class="img-responsive" width="200">->
+        <img src="{{ url_for('static', filename='images/pic11.png')}}" alt="Image 1" class="img-responsive" width="200">->
+        <img src="{{ url_for('static', filename='images/pic12.png')}}" alt="Image 1" class="img-responsive" width="200">
+    </div>
+</br>
+    <h3>Upload your file and start using this feature</h3>
+</br>
+    {{ form.submit(class="btn btn-dark") }}
+    <a href="#" class="btn btn-outline-success">Upload File</a>
+    <a href="#" class="btn btn-outline-success">Use already existing file</a>
+    <a href="#" class="btn btn-outline-success">Download the dataset</a>
+
+</html>
+
+
+{% endblock %}

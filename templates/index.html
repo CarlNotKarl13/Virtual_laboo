@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="shadow-lg p-5 mb-5 bg-body-tertiary rounded" >
+    <center>
+<h1>Welcome to the Heidelberg Materials Virtual Lab</h1></center><br />
+<p>This is a application is virtual lab which permit to make everyone acces and try the intelligent functionalities.To use it please register or connect then upload a file with a small descritpion, then you can use your upload file in the virtual lab</p><br />
+
+<div style="display: flex; justify-content: space-between; gap: 1px;">
+  <div class="card" style="width: 23rem;">
+    <img src="{{ url_for('static', filename='images/pic8.png')}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Virtual Lab feature 1</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="{{ url_for('virtual_lab1') }}" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  
+  <div class="card" style="width: 23rem;">
+    <img src="{{ url_for('static', filename='images/virt_lab2.png')}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Virtual Lab feature 2</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="{{ url_for('virtual_lab2') }}" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  
+  <div class="card" style="width: 23rem;">
+    <img src="{{ url_for('static', filename='images/virt_lab3.png')}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Virtual Lab feature 3</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
