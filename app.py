@@ -1,4 +1,5 @@
 from flask import Flask, render_template, flash, redirect, url_for, request 
+from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user,LoginManager,current_user
 from wtforms import StringField, PasswordField, BooleanField, SubmitField, FileField, TextAreaField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
@@ -21,10 +22,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from passlib.hash import pbkdf2_sha256
 from sanitize_filename import sanitize
-
-#import rpy2.robjects as robjects
-#from rpy2.robjects.packages import importr
-#import rpy2
 
 
 #####################################################################
